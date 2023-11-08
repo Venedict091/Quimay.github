@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #ffe76a;
+}
+.Pandesal{
+    width: 100%;
+    height: 100vh;
+    background-image: /*linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),*/url("Images/ME.jpg");/*<!--Photo by <a href="https://unsplash.com/@laohu911?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sheng Hu</a> on <a href="https://unsplash.com/photos/a-night-time-view-of-a-beach-with-blue-smoke-coming-out-of-the-water-uix9twQONmo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->*/
+    background-size: cover;
+    background-position: center center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0d59c4e7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    color: #fff;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0d59c4e7;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #0d59c4e7;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+} 
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    button: none;
+}
+.about{
+    margin: 12px;
+    padding: 9px;
+    text-align: center;
+    border-style: double;
+    color: #fff;
+}
+#p1{
+    color: #fff;
+}
+.hobbies{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 150;
+    line-height: 22px;
+    padding: 10px;
+}
+.row1{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.hobbies-col{
+    flex-basis: 24%;
+    background: #fff1f1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 15px 9px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 0;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.hobbies-col img{
+    height: 200px;
+    width: 200px;
+}
+.family{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.family-col{
+    flex-basis: 24%;
+    background: #fff1f1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 15px 9px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 0;
+}
+.family-col img{
+    height: 200px;
+    width: 200px;
+}
